@@ -1,15 +1,15 @@
 import { Router } from "express";
 import {
   getAllProducts,
-  createProduct,
+  createProducts,
   updateProduct,
   deleteProduct
-} from "../controllers/prduct.controller"
+} from "../controllers/product.controller.js"
 
 const router = Router()
 
 //Create
-router.post("/", createProduct)
+router.post("/", createProducts)
 //Read
 router.get("/", getAllProducts)
 //Update
